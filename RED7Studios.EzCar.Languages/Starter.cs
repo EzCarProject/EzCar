@@ -1,6 +1,7 @@
 ﻿namespace RED7Studios.EzCar.Languages
 {
-    public class Class1
+    static class Starter
     {
+        // Nothing
     }
 }
