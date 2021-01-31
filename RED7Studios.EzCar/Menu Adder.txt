@@ -1,0 +1,11 @@
+﻿public void MenuAdder(ToolStripMenuItem tsi)
+{
+    ToolStripMenuItem subItem = new ToolStripMenuItem("test");
+    subItem.Click += SubItem_Click;
+    tsi.DropDownItems.Add(subItem);
+}
+
+private void SubItem_Click(object sender, EventArgs e)
+{
+    MessageBox.Show("Test");
+}

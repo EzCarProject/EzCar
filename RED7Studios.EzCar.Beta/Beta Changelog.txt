@@ -1,0 +1,25 @@
+﻿8/12/2020:
+- Update forms to have a modern look using my dll :)
+- Make all of the forms have the same size to prevent weird looking guis on unsupported devices.
+- Add comments to most of the forms and code.
+- Removed most unnesseracy functions.
+(i am bored - 9:00 PM)
+
+16/12/2020:
+- Code cleanup on all forms.
+- Changed/added some icons.
+- Changed the play pause, next, previous and shuffle with icons.
+- Made all forms the same size (again).
+- Changed & added the table layout panel with 5 columns instead.
+- Replaced all buttons in frmMusic with custom icon buttons.
+
+22/12/2020:
+- Fixed the issue on github: https://github.com/RED7Studios/EzCar/issues/1
+- Made the program get the time faster.
+- Added languages currently in testing and not fully working. (need translators)
+- Added publicly avaliable plugin maker as well as encryption for developers.
+- Attempting and I mean ATTEMPTING to add plugins backwards compactiblitly.
+- Added publicly avaliable form to get your plugin on the ECMU Market:
+  https://docs.google.com/forms/d/10nby7tF1tFCtsPUZ7_uIC8660-jh4I880nULsWTbX94
+- Code cleanupped again on all of the code and forms.
+- Changed some text in the settings and other places like the plugins form name.
