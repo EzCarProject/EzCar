@@ -101,17 +101,8 @@ namespace RED7Studios.EzCar
             // Write a line to the console with the settings.
             Console.WriteLine("\n\nSettings:\nVersion: " + settings.Version + "\nBeta: " + settings.Beta + "\n\nUpdate URL: " + settings.UpdateURL + "\nUpdate Structure: " + settings.UpdateURL + settings.UpdateURLStruct + "\nUpdate XML: " + settings.UpdateURL + settings.UpdateURLXML + "\n\n");
 
-            // If the program is beening sandboxed.
-            if (Protection.MainModule.IsSandboxie())
-            {
-                // Exit the program.
-                Application.Exit();
-            }
-            else
-            {
-                // Run the program.
-                Application.Run();
-            }
+            // Run the program.
+            Application.Run();
         }
     }
 }

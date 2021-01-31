@@ -25,33 +25,6 @@ namespace RED7Studios.EzCar
 
             // Initalize the languages.
             this.Text = Languages.Resources.frmPlugins_Name;
-
-            // Create a new button called 'btn'.
-            Button btn1 = new Button();
-            // Set 'btn's height to 180.
-            btn1.Height = 180;
-            // Set 'btn's width to 180.
-            btn1.Width = 180;
-            // Set 'btn's back color to green.
-            btn1.BackColor = Color.Aqua;
-            // Set 'btn's fore color to white.
-            btn1.ForeColor = Color.White;
-            // Set the 'btn's text to the plugin name.
-            btn1.Text = "Backwards Compact";
-            // Set the 'btn's name to 'btn' plus the plugin name.
-            btn1.Name = "btnBackwardsCompact";
-            // Set the font of 'btn' to 'Segoe UI'.
-            btn1.Font = new Font("Segoe UI", 16);
-            // Set click event.
-            btn1.Click += Btn_Click;
-            // Add the 'btn' to the plugins list.
-            flowLayoutPanel1.Controls.Add(btn1);
-        }
-
-        private void Btn_Click(object sender, EventArgs e)
-        {
-            Settings.Plugins.v1001 v1001 = new Settings.Plugins.v1001();
-            v1001.Show();
         }
 
         private void frmPlugins_Load(object sender, EventArgs e)

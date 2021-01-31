@@ -71,12 +71,6 @@
     <Compile Include="frmMenu.Designer.cs">
       <DependentUpon>frmMenu.cs</DependentUpon>
     </Compile>
-    <Compile Include="Players\frmPirate.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Players\frmPirate.Designer.cs">
-      <DependentUpon>frmPirate.cs</DependentUpon>
-    </Compile>
     <Compile Include="Settings\frmPlugins.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -109,9 +103,6 @@
     </EmbeddedResource>
     <EmbeddedResource Include="frmMenu.resx">
       <DependentUpon>frmMenu.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Players\frmPirate.resx">
-      <DependentUpon>frmPirate.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Settings\frmPlugins.resx">
       <DependentUpon>frmPlugins.cs</DependentUpon>
