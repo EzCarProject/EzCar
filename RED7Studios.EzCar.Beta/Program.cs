@@ -49,7 +49,7 @@ namespace RED7Studios.EzCar
                     using (WebClient client = new WebClient())
                     {
                         // Download the 'ECMU.Market.ecmu_dll'.
-                        client.DownloadFile("https://ezcar.doubleddevelopment.ml/ecmu-plugin/ECMU.Market.ecmu_dll", "Plugins\\ECMU.Market.ecmu_dll");
+                        client.DownloadFile("https://raw.githubusercontent.com/EzCarProject/ECMU/main/ecmu-market/apps/ECMU/ecmu-market/latest.ecmu_dll", "Plugins\\ECMU.Market.ecmu_dll");
                     }
                 }
 
@@ -60,7 +60,7 @@ namespace RED7Studios.EzCar
                     using (WebClient client = new WebClient())
                     {
                         // Download the 'ECMU.Settings.ecmu_dll'.
-                        client.DownloadFile("https://ezcar.doubleddevelopment.ml/ecmu-plugin/ECMU.Settings.ecmu_dll", "Plugins\\ECMU.Settings.ecmu_dll");
+                        client.DownloadFile("https://raw.githubusercontent.com/EzCarProject/ECMU/main/ecmu-market/apps/ECMU/ecmu-settings/latest.ecmu_dll", "Plugins\\ECMU.Settings.ecmu_dll");
                     }
                 }
             }
