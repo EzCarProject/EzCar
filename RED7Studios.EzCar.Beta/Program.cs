@@ -18,6 +18,10 @@ namespace RED7Studios.EzCar
         [STAThread]
         static void Main()
         {
+            // Configuration for the web client.
+            ServicePointManager.Expect100Continue = true;
+            ServicePointManager.SecurityProtocol = (SecurityProtocolType)3072;
+
             // Try to find if everything exists
             try
             {
