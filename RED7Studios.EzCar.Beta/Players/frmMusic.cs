@@ -19,7 +19,7 @@ namespace RED7Studios.EzCar.Players
         WindowsMediaPlayer player = new WindowsMediaPlayer();
 
         // Create a new 'PluginImplementerMenu' called 'PI'.
-        PluginImplementerMenu PI;
+        PluginImplementer PI;
 
         public frmMusic()
         {
@@ -32,7 +32,6 @@ namespace RED7Studios.EzCar.Players
             this.lbAlbum.Text = Languages.Resources.frmMusic_PlayASong;
             this.lbArtist.Text = Languages.Resources.frmMusic_PlayASong;
             this.lbSong.Text = Languages.Resources.frmMusic_PlayASong;
-
         }
 
         // Create a new string called 'musicRootDirectory' and set it to the MusicDirectory file.
@@ -129,10 +128,10 @@ namespace RED7Studios.EzCar.Players
                 foreach (var type in assembly.GetTypes())
                 {
                     // If the type interfaces contains the plugin implementer for the menu.
-                    if (type.GetInterfaces().Contains(typeof(PluginImplementerMenu)))
+                    if (type.GetInterfaces().Contains(typeof(PluginImplementer)))
                     {
                         // Set PI to the new instance of type as the plugin implementer for the menu.
-                        PI = Activator.CreateInstance(type) as PluginImplementerMenu;
+                        PI = Activator.CreateInstance(type) as PluginImplementer;
                         // Create a new string called 'name' with the plugin name.
                         string name = PI.PluginName();
 

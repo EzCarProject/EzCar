@@ -1,7 +1,5 @@
 ﻿using System;
 using System.Drawing;
-using System.Security.Cryptography;
-using System.Text;
 using System.Windows.Forms;
 
 namespace ECMU.Interface
@@ -11,47 +9,28 @@ namespace ECMU.Interface
         string PluginName();
         string PluginVersion();
         string PluginAuthor();
-        string AuthorSignature();
+        string PluginSignature();
         string PluginDescription();
+        void ButtonAdder(Button btn);
+        void MenuAdder(ToolStripMenuItem tsi);
         Icon PluginIcon();
     }
 
+    [Obsolete("We have recently decided to make the PluginImplementerAll, PluginImplementerButton and PluginImplementerMenu as obsolete. Please use PluginImplementer instead.")]
     public interface PluginImplementerButton : PluginImplementer
     {
-        void ButtonAdder(Button btn);
+
     }
 
+    [Obsolete("We have recently decided to make the PluginImplementerAll, PluginImplementerButton and PluginImplementerMenu as obsolete. Please use PluginImplementer instead.")]
     public interface PluginImplementerMenu : PluginImplementer
     {
-        void MenuAdder(ToolStripMenuItem tsi);
+
     }
 
+    [Obsolete("We have recently decided to make the PluginImplementerAll, PluginImplementerButton and PluginImplementerMenu as obsolete. Please use PluginImplementer instead.")]
     public interface PluginImplementerAll : PluginImplementer, PluginImplementerButton, PluginImplementerMenu
     {
 
-    }
-
-    public static class StringUtil
-    {
-        private static byte[] key = new byte[8] { 1, 2, 3, 4, 5, 6, 7, 8 };
-        private static byte[] iv = new byte[8] { 1, 2, 3, 4, 5, 6, 7, 8 };
-
-        public static string Crypt(this string text)
-        {
-            SymmetricAlgorithm algorithm = DES.Create();
-            ICryptoTransform transform = algorithm.CreateEncryptor(key, iv);
-            byte[] inputbuffer = Encoding.Unicode.GetBytes(text);
-            byte[] outputBuffer = transform.TransformFinalBlock(inputbuffer, 0, inputbuffer.Length);
-            return Convert.ToBase64String(outputBuffer);
-        }
-
-        public static string Decrypt(this string text)
-        {
-            SymmetricAlgorithm algorithm = DES.Create();
-            ICryptoTransform transform = algorithm.CreateDecryptor(key, iv);
-            byte[] inputbuffer = Convert.FromBase64String(text);
-            byte[] outputBuffer = transform.TransformFinalBlock(inputbuffer, 0, inputbuffer.Length);
-            return Encoding.Unicode.GetString(outputBuffer);
-        }
     }
 }

@@ -14,7 +14,7 @@ namespace RED7Studios.EzCar
     public partial class frmPlugins : ModernForm
     {
         // Create new PluginImplementerButton called 'PI'.
-        PluginImplementerButton PI;
+        PluginImplementer PI;
 
         public frmPlugins()
         {
@@ -38,10 +38,10 @@ namespace RED7Studios.EzCar
                     foreach (var type in assembly.GetTypes())
                     {
                         // If the type interfaces contains the plugin implementer for the button OR all of the implementers.
-                        if (type.GetInterfaces().Contains(typeof(PluginImplementerButton)) || type.GetInterfaces().Contains(typeof(PluginImplementerAll)))
+                        if (type.GetInterfaces().Contains(typeof(PluginImplementer)) || type.GetInterfaces().Contains(typeof(PluginImplementerButton)) || type.GetInterfaces().Contains(typeof(PluginImplementerAll)))
                         {
                             // Set PI to the new instance of type as the plugin implementer for the button.
-                            PI = Activator.CreateInstance(type) as PluginImplementerButton;
+                            PI = Activator.CreateInstance(type) as PluginImplementer;
                             // Create a new string called 'name' with the plugin name.
                             string name = PI.PluginName();
 
@@ -79,12 +79,12 @@ namespace RED7Studios.EzCar
                     foreach (var type in assembly.GetTypes())
                     {
                         // If the type interfaces contains the plugin implementer for the button OR all of the implementers.
-                        if (type.GetInterfaces().Contains(typeof(PluginImplementerButton)) || type.GetInterfaces().Contains(typeof(PluginImplementerAll)))
+                        if (type.GetInterfaces().Contains(typeof(PluginImplementer)) || type.GetInterfaces().Contains(typeof(PluginImplementer)) || type.GetInterfaces().Contains(typeof(PluginImplementerAll)))
                         {
                             /* if (PI.AuthorSignature() == "JibTdHy1xTYOHo2ah5bXPVp84445psPCspumlw0S34Hv5hi404IZYEStR9ysCTA0FvvwiedADVMYK3PY2VTJDIEWCyXi1vkhue9UWHkF2s2Ys6qX28Wc0j3ipiQd6D0sFyIthmPDl1jcGe6KlnfcLoNh6jbaIN8Wxu0a4lTRBgoRjcEIi06mvYRNEoM1imnNjszIYRZY")
                             { */
                             // Set PI to the new instance of type as the plugin implementer for the button.
-                            PI = Activator.CreateInstance(type) as PluginImplementerButton;
+                            PI = Activator.CreateInstance(type) as PluginImplementer;
                             // Create a new string called 'name' with the plugin name.
                             string name = PI.PluginName();
 
