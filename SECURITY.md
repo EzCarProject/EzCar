@@ -14,4 +14,4 @@ currently being supported with security updates.
 
 ## Reporting a Vulnerability
 
-The best place to submit a vulnerability is by emailing me here: [mitchelld@redsevenstudios.com](mailto:mitchelld@redsevenstudios.com). However, if it isn't a HUGE vulnerability then you can report it on the [Double D Development Forum](https://doubleddevelopment.tk/c/bug-reports/ezcar-bug-reports/35)
+The best place to submit a vulnerability is by emailing me here: [mitchelld@redsevenstudios.com](mailto:mitchelld@redsevenstudios.com). However, if it isn't a HUGE vulnerability then you can report it on the [Double D Development Forum](https://doubleddevelopment.tk/c/bug-reports/ezcar-bug-reports/35).
