@@ -1,4 +1,4 @@
-# :warning: The developer documentation is incorrect and not updated. :warning:
+# :warning: This version of EzCar is out of date and now is [EzCarRecode](https://github.com/RED7Studios/RED7Studios.EzCarRecode), you have to compile this at the moment. :warning:
 
 ![Logo](https://raw.githubusercontent.com/EzCarProject/EzCar/main/Content/Cover.png?token=AQIR5PXHKHXR2ZW5ZJ7TC63ACYQPO)
 ## Description
